@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2D4EE391F5E7F4100EEADE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4EE381F5E7F4100EEADE2 /* main.m */; };
+		F2D4EE3C1F5E7F4100EEADE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4EE3B1F5E7F4100EEADE2 /* AppDelegate.m */; };
+		F2D4EE3E1F5E7F4100EEADE2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F2D4EE3D1F5E7F4100EEADE2 /* GameScene.sks */; };
+		F2D4EE431F5E7F4100EEADE2 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4EE421F5E7F4100EEADE2 /* GameScene.m */; };
+		F2D4EE461F5E7F4100EEADE2 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4EE451F5E7F4100EEADE2 /* GameViewController.m */; };
+		F2D4EE491F5E7F4100EEADE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D4EE471F5E7F4100EEADE2 /* Main.storyboard */; };
+		F2D4EE4B1F5E7F4100EEADE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D4EE4A1F5E7F4100EEADE2 /* Assets.xcassets */; };
+		F2D4EE4E1F5E7F4100EEADE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D4EE4C1F5E7F4100EEADE2 /* LaunchScreen.storyboard */; };
+		F2D4EE591F5E7F4100EEADE2 /* SnakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4EE581F5E7F4100EEADE2 /* SnakeTests.m */; };
+		F2D4EE651F5E814600EEADE2 /* Snake.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4EE641F5E814600EEADE2 /* Snake.m */; };
+		F2D4EE691F5E822F00EEADE2 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4EE681F5E822F00EEADE2 /* Queue.m */; };
+		F2D4EE6C1F5E87B700EEADE2 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4EE6B1F5E87B700EEADE2 /* Food.m */; };
+		F2D4EE6F1F5E8C3900EEADE2 /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4EE6E1F5E8C3900EEADE2 /* Map.m */; };
+		F2D4EE771F5EAC9700EEADE2 /* GameViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4EE761F5EAC9700EEADE2 /* GameViewModel.m */; };
+		F2D4EE7F1F60383700EEADE2 /* ObjectConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4EE7E1F60383700EEADE2 /* ObjectConfigurator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2D4EE551F5E7F4100EEADE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2D4EE2C1F5E7F4000EEADE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2D4EE331F5E7F4000EEADE2;
+			remoteInfo = Snake;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2D4EE341F5E7F4100EEADE2 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D4EE381F5E7F4100EEADE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2D4EE3A1F5E7F4100EEADE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2D4EE3B1F5E7F4100EEADE2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F2D4EE3D1F5E7F4100EEADE2 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		F2D4EE411F5E7F4100EEADE2 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		F2D4EE421F5E7F4100EEADE2 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		F2D4EE441F5E7F4100EEADE2 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		F2D4EE451F5E7F4100EEADE2 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		F2D4EE481F5E7F4100EEADE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2D4EE4A1F5E7F4100EEADE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2D4EE4D1F5E7F4100EEADE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2D4EE4F1F5E7F4100EEADE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D4EE541F5E7F4100EEADE2 /* SnakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D4EE581F5E7F4100EEADE2 /* SnakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeTests.m; sourceTree = "<group>"; };
+		F2D4EE5A1F5E7F4100EEADE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D4EE631F5E814600EEADE2 /* Snake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Snake.h; sourceTree = "<group>"; };
+		F2D4EE641F5E814600EEADE2 /* Snake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Snake.m; sourceTree = "<group>"; };
+		F2D4EE671F5E822F00EEADE2 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		F2D4EE681F5E822F00EEADE2 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		F2D4EE6A1F5E87B700EEADE2 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		F2D4EE6B1F5E87B700EEADE2 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
+		F2D4EE6D1F5E8C3900EEADE2 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		F2D4EE6E1F5E8C3900EEADE2 /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Map.m; sourceTree = "<group>"; };
+		F2D4EE751F5EAC9700EEADE2 /* GameViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewModel.h; sourceTree = "<group>"; };
+		F2D4EE761F5EAC9700EEADE2 /* GameViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewModel.m; sourceTree = "<group>"; };
+		F2D4EE781F5EF95200EEADE2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		F2D4EE7D1F60383700EEADE2 /* ObjectConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectConfigurator.h; sourceTree = "<group>"; };
+		F2D4EE7E1F60383700EEADE2 /* ObjectConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectConfigurator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2D4EE311F5E7F4000EEADE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D4EE511F5E7F4100EEADE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2D4EE2B1F5E7F4000EEADE2 = {
+			isa = PBXGroup;
+			children = (
+				F2D4EE361F5E7F4100EEADE2 /* Snake */,
+				F2D4EE571F5E7F4100EEADE2 /* SnakeTests */,
+				F2D4EE351F5E7F4100EEADE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2D4EE351F5E7F4100EEADE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4EE341F5E7F4100EEADE2 /* Snake.app */,
+				F2D4EE541F5E7F4100EEADE2 /* SnakeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2D4EE361F5E7F4100EEADE2 /* Snake */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4EE7C1F60381500EEADE2 /* DependencyInjection */,
+				F2D4EE741F5EA86800EEADE2 /* View */,
+				F2D4EE731F5EA86200EEADE2 /* ViewModel */,
+				F2D4EE661F5E814A00EEADE2 /* Model */,
+				F2D4EE781F5EF95200EEADE2 /* Constants.h */,
+				F2D4EE3A1F5E7F4100EEADE2 /* AppDelegate.h */,
+				F2D4EE3B1F5E7F4100EEADE2 /* AppDelegate.m */,
+				F2D4EE471F5E7F4100EEADE2 /* Main.storyboard */,
+				F2D4EE4A1F5E7F4100EEADE2 /* Assets.xcassets */,
+				F2D4EE4C1F5E7F4100EEADE2 /* LaunchScreen.storyboard */,
+				F2D4EE4F1F5E7F4100EEADE2 /* Info.plist */,
+				F2D4EE371F5E7F4100EEADE2 /* Supporting Files */,
+			);
+			path = Snake;
+			sourceTree = "<group>";
+		};
+		F2D4EE371F5E7F4100EEADE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4EE381F5E7F4100EEADE2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2D4EE571F5E7F4100EEADE2 /* SnakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4EE581F5E7F4100EEADE2 /* SnakeTests.m */,
+				F2D4EE5A1F5E7F4100EEADE2 /* Info.plist */,
+			);
+			path = SnakeTests;
+			sourceTree = "<group>";
+		};
+		F2D4EE661F5E814A00EEADE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4EE671F5E822F00EEADE2 /* Queue.h */,
+				F2D4EE681F5E822F00EEADE2 /* Queue.m */,
+				F2D4EE631F5E814600EEADE2 /* Snake.h */,
+				F2D4EE641F5E814600EEADE2 /* Snake.m */,
+				F2D4EE6A1F5E87B700EEADE2 /* Food.h */,
+				F2D4EE6B1F5E87B700EEADE2 /* Food.m */,
+				F2D4EE6D1F5E8C3900EEADE2 /* Map.h */,
+				F2D4EE6E1F5E8C3900EEADE2 /* Map.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F2D4EE731F5EA86200EEADE2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4EE751F5EAC9700EEADE2 /* GameViewModel.h */,
+				F2D4EE761F5EAC9700EEADE2 /* GameViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		F2D4EE741F5EA86800EEADE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4EE441F5E7F4100EEADE2 /* GameViewController.h */,
+				F2D4EE451F5E7F4100EEADE2 /* GameViewController.m */,
+				F2D4EE411F5E7F4100EEADE2 /* GameScene.h */,
+				F2D4EE421F5E7F4100EEADE2 /* GameScene.m */,
+				F2D4EE3D1F5E7F4100EEADE2 /* GameScene.sks */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F2D4EE7C1F60381500EEADE2 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4EE7D1F60383700EEADE2 /* ObjectConfigurator.h */,
+				F2D4EE7E1F60383700EEADE2 /* ObjectConfigurator.m */,
+			);
+			name = DependencyInjection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2D4EE331F5E7F4000EEADE2 /* Snake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2D4EE5D1F5E7F4100EEADE2 /* Build configuration list for PBXNativeTarget "Snake" */;
+			buildPhases = (
+				F2D4EE301F5E7F4000EEADE2 /* Sources */,
+				F2D4EE311F5E7F4000EEADE2 /* Frameworks */,
+				F2D4EE321F5E7F4000EEADE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Snake;
+			productName = Snake;
+			productReference = F2D4EE341F5E7F4100EEADE2 /* Snake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2D4EE531F5E7F4100EEADE2 /* SnakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2D4EE601F5E7F4100EEADE2 /* Build configuration list for PBXNativeTarget "SnakeTests" */;
+			buildPhases = (
+				F2D4EE501F5E7F4100EEADE2 /* Sources */,
+				F2D4EE511F5E7F4100EEADE2 /* Frameworks */,
+				F2D4EE521F5E7F4100EEADE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2D4EE561F5E7F4100EEADE2 /* PBXTargetDependency */,
+			);
+			name = SnakeTests;
+			productName = SnakeTests;
+			productReference = F2D4EE541F5E7F4100EEADE2 /* SnakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2D4EE2C1F5E7F4000EEADE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Tina Chang";
+				TargetAttributes = {
+					F2D4EE331F5E7F4000EEADE2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					F2D4EE531F5E7F4100EEADE2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F2D4EE331F5E7F4000EEADE2;
+					};
+				};
+			};
+			buildConfigurationList = F2D4EE2F1F5E7F4000EEADE2 /* Build configuration list for PBXProject "Snake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2D4EE2B1F5E7F4000EEADE2;
+			productRefGroup = F2D4EE351F5E7F4100EEADE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2D4EE331F5E7F4000EEADE2 /* Snake */,
+				F2D4EE531F5E7F4100EEADE2 /* SnakeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2D4EE321F5E7F4000EEADE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D4EE491F5E7F4100EEADE2 /* Main.storyboard in Resources */,
+				F2D4EE3E1F5E7F4100EEADE2 /* GameScene.sks in Resources */,
+				F2D4EE4B1F5E7F4100EEADE2 /* Assets.xcassets in Resources */,
+				F2D4EE4E1F5E7F4100EEADE2 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D4EE521F5E7F4100EEADE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2D4EE301F5E7F4000EEADE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D4EE651F5E814600EEADE2 /* Snake.m in Sources */,
+				F2D4EE6C1F5E87B700EEADE2 /* Food.m in Sources */,
+				F2D4EE461F5E7F4100EEADE2 /* GameViewController.m in Sources */,
+				F2D4EE3C1F5E7F4100EEADE2 /* AppDelegate.m in Sources */,
+				F2D4EE691F5E822F00EEADE2 /* Queue.m in Sources */,
+				F2D4EE7F1F60383700EEADE2 /* ObjectConfigurator.m in Sources */,
+				F2D4EE431F5E7F4100EEADE2 /* GameScene.m in Sources */,
+				F2D4EE771F5EAC9700EEADE2 /* GameViewModel.m in Sources */,
+				F2D4EE6F1F5E8C3900EEADE2 /* Map.m in Sources */,
+				F2D4EE391F5E7F4100EEADE2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D4EE501F5E7F4100EEADE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D4EE591F5E7F4100EEADE2 /* SnakeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2D4EE561F5E7F4100EEADE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2D4EE331F5E7F4000EEADE2 /* Snake */;
+			targetProxy = F2D4EE551F5E7F4100EEADE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2D4EE471F5E7F4100EEADE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2D4EE481F5E7F4100EEADE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2D4EE4C1F5E7F4100EEADE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2D4EE4D1F5E7F4100EEADE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2D4EE5B1F5E7F4100EEADE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2D4EE5C1F5E7F4100EEADE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2D4EE5E1F5E7F4100EEADE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Snake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tina-Chang.Snake";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F2D4EE5F1F5E7F4100EEADE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Snake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tina-Chang.Snake";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F2D4EE611F5E7F4100EEADE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SnakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tina-Chang.SnakeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snake.app/Snake";
+			};
+			name = Debug;
+		};
+		F2D4EE621F5E7F4100EEADE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SnakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tina-Chang.SnakeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snake.app/Snake";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2D4EE2F1F5E7F4000EEADE2 /* Build configuration list for PBXProject "Snake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D4EE5B1F5E7F4100EEADE2 /* Debug */,
+				F2D4EE5C1F5E7F4100EEADE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2D4EE5D1F5E7F4100EEADE2 /* Build configuration list for PBXNativeTarget "Snake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D4EE5E1F5E7F4100EEADE2 /* Debug */,
+				F2D4EE5F1F5E7F4100EEADE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F2D4EE601F5E7F4100EEADE2 /* Build configuration list for PBXNativeTarget "SnakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D4EE611F5E7F4100EEADE2 /* Debug */,
+				F2D4EE621F5E7F4100EEADE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2D4EE2C1F5E7F4000EEADE2 /* Project object */;
+}
