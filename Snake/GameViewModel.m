@@ -87,22 +87,19 @@
     [_snake move];
 }
 
-- (void)turn:(CGPoint)location
+- (void)turn:(CGVector)move
 {
-    int dx = location.x - _snakeHeadInScene.position.x;
-    int dy = location.y - _snakeHeadInScene.position.y;
-    
-    if (_snake.direction == DirectionDown || _snake.direction == DirectionUp) {
-        if (dx > 0) {
-            [_snake turnDirection:DirectionRight];
-        } else if (dx < 0) {
-            [_snake turnDirection:DirectionLeft];
+    if (fabs(move.dx) > fabs(move.dy) && _snake.orientation == OrientationVertical) {
+        if (move.dx > 0) {
+            [self.snake turnDirection:DirectionRight];
+        } else if (move.dx < 0) {
+            [self.snake turnDirection:DirectionLeft];
         }
-    } else {
-        if (dy > 0) {
-            [_snake turnDirection:DirectionUp];
-        } else if (dy < 0) {
-            [_snake turnDirection:DirectionDown];
+    } else if (fabs(move.dx) < fabs(move.dy) && _snake.orientation == OrientationHorizon) {
+        if (move.dy > 0) {
+            [self.snake turnDirection:DirectionUp];
+        } else if (move.dy < 0) {
+            [self.snake turnDirection:DirectionDown];
         }
     }
 }

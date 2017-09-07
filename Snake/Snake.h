@@ -33,6 +33,7 @@ static NSString *SnakeAteFood = @"SnakeAteFood";
 @property (nonatomic, assign, readonly) CGPoint head;
 @property (nonatomic, strong, readonly) Queue *body;
 @property (nonatomic, assign, readonly) Direction direction;
+@property (nonatomic, assign, readonly) Orientation orientation;
 
 + (instancetype)snakeWithDefaultPointsInMap:(Map*)map;
 - (instancetype)initWithPoints:(Queue *)points direction:(Direction)direction;

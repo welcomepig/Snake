@@ -18,6 +18,8 @@ static NSString* SnakeMovingActionName = @"snakeMoving";
 
 @interface GameScene ()
 
+@property (nonatomic, assign) CGPoint beginLocation;
+
 @property (nonatomic, strong) SKLabelNode *startButton;
 @property (nonatomic, strong) SKLabelNode *retryButton;
 @property (nonatomic, strong) SKLabelNode *failedMsgLabel;
@@ -39,6 +41,26 @@ static NSString* SnakeMovingActionName = @"snakeMoving";
     [_viewModel addObserver:self forKeyPath:@"snakeInScene" options:0 context:nil];
     [_viewModel addObserver:self forKeyPath:@"foodInScene" options:0 context:nil];
     [_viewModel addObserver:self forKeyPath:@"status" options:0 context:nil];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+
+    if (_viewModel.status == GameStatusPlaying) {
+        [self startPan:touch];
+    }
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    UITouch * touch = [touches anyObject];
+    
+    if (_viewModel.status == GameStatusPlaying) {
+        [self endPan:touch];
+    } else {
+        [self checkStartClicked:touch];
+    }
 }
 
 #pragma mark - Private
@@ -149,21 +171,26 @@ static NSString* SnakeMovingActionName = @"snakeMoving";
     [self removeActionForKey:SnakeMovingActionName];
 }
 
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+- (void)startPan:(UITouch *)touch
 {
-    UITouch * touch = [touches anyObject];
+    self.beginLocation = [touch locationInNode:self];
+}
+
+- (void)endPan:(UITouch *)touch
+{
+    CGPoint location = [touch locationInNode:self];
+    CGVector move = CGVectorMake(location.x - _beginLocation.x, location.y - _beginLocation.y);
+    [self.viewModel turn:move];
+}
+
+- (void)checkStartClicked:(UITouch *)touch
+{
     CGPoint location = [touch locationInNode:self];
     SKSpriteNode *touchedNode = (SKSpriteNode *)[self nodeAtPoint:location];
     
     if ([touchedNode isEqual:_startButton] || [touchedNode isEqual:_retryButton]) {
         [self.viewModel start];
-    } else {
-        [self.viewModel turn:location];
     }
-}
-
-- (void)update:(CFTimeInterval)currentTime
-{
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context

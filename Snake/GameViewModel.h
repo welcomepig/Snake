@@ -30,6 +30,6 @@ typedef NS_ENUM(NSUInteger, GameStatus) {
 - (instancetype)initWithMap:(Map*)map;
 - (void)start;
 - (void)update;
-- (void)turn:(CGPoint)location;
+- (void)turn:(CGVector)move;
 
 @end

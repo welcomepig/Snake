@@ -44,6 +44,14 @@
     return self;
 }
 
+- (Orientation)orientation
+{
+    if (_direction == DirectionRight || _direction == DirectionLeft) {
+        return OrientationHorizon;
+    }
+    return OrientationVertical;
+}
+
 - (CGPoint)head
 {
     return [[_body back] CGPointValue];
