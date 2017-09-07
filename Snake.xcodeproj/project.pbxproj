@@ -46,6 +46,7 @@
 		B45F0FDAF99A3531F74597DD /* Pods-Snake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snake/Pods-Snake.debug.xcconfig"; sourceTree = "<group>"; };
 		F28524461F6148440053938A /* GameViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewModelTests.m; sourceTree = "<group>"; };
 		F285244A1F614CBE0053938A /* GameSceneTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSceneTests.m; sourceTree = "<group>"; };
+		F285244D1F61A1CC0053938A /* GameViewModel+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GameViewModel+Test.h"; sourceTree = "<group>"; };
 		F2D4EE341F5E7F4100EEADE2 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D4EE381F5E7F4100EEADE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2D4EE3A1F5E7F4100EEADE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				F28524461F6148440053938A /* GameViewModelTests.m */,
+				F285244D1F61A1CC0053938A /* GameViewModel+Test.h */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";

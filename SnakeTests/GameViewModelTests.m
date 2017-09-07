@@ -7,7 +7,6 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <OCMock/OCMock.h>
 
 #import "GameViewModel.h"
 #import "Queue.h"
