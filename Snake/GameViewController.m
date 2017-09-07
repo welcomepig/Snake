@@ -37,7 +37,6 @@
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskAllButUpsideDown;
-
 }
 
 - (void)didReceiveMemoryWarning

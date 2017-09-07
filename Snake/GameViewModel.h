@@ -29,6 +29,7 @@ typedef NS_ENUM(NSUInteger, GameStatus) {
 
 - (instancetype)initWithMap:(Map*)map;
 - (void)start;
+- (void)startWithSnake:(Snake*)snake food:(Food*)food;
 - (void)update;
 - (void)turn:(CGVector)move;
 

@@ -22,7 +22,7 @@ typedef NS_ENUM(NSUInteger, Orientation) {
 };
 
 static NSString *SnakeMoved = @"snakeMoved";
-static NSString *SnakeAteFood = @"SnakeAteFood";
+static NSString *SnakeAteFood = @"snakeAteFood";
 
 @class Map;
 @class Food;

@@ -49,12 +49,23 @@
     return self;
 }
 
-- (void)start
+- (void)startWithSnake:(Snake*)snake food:(Food*)food
 {
-    [self createSnake];
-    [self createFood];
+    self.snake = snake;
+    self.food = food;
+    
+    [self createSnakeInSceneFromSnake:self.snake];
+    [self createFoodInSceneFromFood:self.food];
     
     self.status = GameStatusPlaying;
+}
+
+- (void)start
+{
+    Snake *snake = [Snake snakeWithDefaultPointsInMap:_map];
+    Food *food = [self createRandomFood];
+    
+    [self startWithSnake:snake food:food];
 }
 
 - (void)update
@@ -70,7 +81,8 @@
     // 2. food
     if (_food.pos.x == next.x && _food.pos.y == next.y) {
         [_snake eatFood:_food];
-        [self createFood];
+        self.food = [self createRandomFood];
+        [self createFoodInSceneFromFood:self.food];
         return;
     }
     
@@ -106,31 +118,36 @@
 
 #pragma mark - Private
 
-- (void)createSnake
+- (void)createSnakeInSceneFromSnake:(Snake*)snake
 {
     [self willChangeValueForKey:@"snakeInScene"];
     
-    self.snake = [Snake snakeWithDefaultPointsInMap:_map];
-    
     _snakeInScene = [[Queue alloc] init];
-    for (id obj in _snake.body) {
+    for (id obj in snake.body) {
         SKNode *node = [SKNode node];
         node.position = [self scenePointFromMapPoint:[obj CGPointValue]];
         [_snakeInScene enqueue:node];
     }
     _snakeHeadInScene = [SKNode node];
-    _snakeHeadInScene.position = [self scenePointFromMapPoint:_snake.head];
+    _snakeHeadInScene.position = [self scenePointFromMapPoint:snake.head];
     
     [self didChangeValueForKey:@"snakeInScene"];
 }
 
-- (void)createFood
+- (Food *)createRandomFood
+{
+    Food *food;
+    
+    do {
+        food = [Food foodWithRandomPointInMap:_map];
+    } while([_snake isPointOnSnake:food.pos]);
+    
+    return food;
+}
+
+- (void)createFoodInSceneFromFood:(Food*)food
 {
     [self willChangeValueForKey:@"foodInScene"];
- 
-    do {
-        self.food = [Food foodWithRandomPointInMap:_map];
-    } while([_snake isPointOnSnake:self.food.pos]);
     
     _foodInScene = [SKNode node];
     _foodInScene.position = [self scenePointFromMapPoint:_food.pos];

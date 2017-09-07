@@ -1,21 +1,21 @@
 //
-//  SnakeTests.m
-//  SnakeTests
+//  GameSceneTests.m
+//  Snake
 //
-//  Created by Tina Chang on 2017/9/5.
+//  Created by Tina Chang on 2017/9/7.
 //  Copyright © 2017年 Tina Chang. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
-#import <OCMock/OCMock.h>
 
-@interface SnakeTests : XCTestCase
+@interface GameSceneTests : XCTestCase
 
 @end
 
-@implementation SnakeTests
+@implementation GameSceneTests
 
-- (void)setUp {
+- (void)setUp
+{
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }

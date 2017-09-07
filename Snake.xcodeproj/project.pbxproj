@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6480B990794E495076743CB /* libPods-SnakeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EFCCACD2DC1C16F22A5149 /* libPods-SnakeTests.a */; };
+		DC25B2E8246949AAE5780805 /* libPods-Snake.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 815AA9EE1FD8080E03CD617B /* libPods-Snake.a */; };
+		F28524471F6148440053938A /* GameViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F28524461F6148440053938A /* GameViewModelTests.m */; };
+		F285244B1F614CBE0053938A /* GameSceneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F285244A1F614CBE0053938A /* GameSceneTests.m */; };
 		F2D4EE391F5E7F4100EEADE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4EE381F5E7F4100EEADE2 /* main.m */; };
 		F2D4EE3C1F5E7F4100EEADE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4EE3B1F5E7F4100EEADE2 /* AppDelegate.m */; };
 		F2D4EE3E1F5E7F4100EEADE2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F2D4EE3D1F5E7F4100EEADE2 /* GameScene.sks */; };
@@ -35,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FD0C3AB0D9EAA0658796B63 /* Pods-SnakeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnakeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnakeTests/Pods-SnakeTests.release.xcconfig"; sourceTree = "<group>"; };
+		33C2E513F51198415EB13E9E /* Pods-SnakeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnakeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnakeTests/Pods-SnakeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		43EFCCACD2DC1C16F22A5149 /* libPods-SnakeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SnakeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		815AA9EE1FD8080E03CD617B /* libPods-Snake.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Snake.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45F0FDAF99A3531F74597DD /* Pods-Snake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snake/Pods-Snake.debug.xcconfig"; sourceTree = "<group>"; };
+		F28524461F6148440053938A /* GameViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewModelTests.m; sourceTree = "<group>"; };
+		F285244A1F614CBE0053938A /* GameSceneTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSceneTests.m; sourceTree = "<group>"; };
 		F2D4EE341F5E7F4100EEADE2 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D4EE381F5E7F4100EEADE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2D4EE3A1F5E7F4100EEADE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +75,7 @@
 		F2D4EE781F5EF95200EEADE2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		F2D4EE7D1F60383700EEADE2 /* ObjectConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectConfigurator.h; sourceTree = "<group>"; };
 		F2D4EE7E1F60383700EEADE2 /* ObjectConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectConfigurator.m; sourceTree = "<group>"; };
+		F899DEB1E4D1805C2B7BEEB7 /* Pods-Snake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snake.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snake/Pods-Snake.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC25B2E8246949AAE5780805 /* libPods-Snake.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,18 +91,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6480B990794E495076743CB /* libPods-SnakeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52E55E5FE2BE8E433C70B381 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				815AA9EE1FD8080E03CD617B /* libPods-Snake.a */,
+				43EFCCACD2DC1C16F22A5149 /* libPods-SnakeTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C3092667F3BA8D6D91C0E3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B45F0FDAF99A3531F74597DD /* Pods-Snake.debug.xcconfig */,
+				F899DEB1E4D1805C2B7BEEB7 /* Pods-Snake.release.xcconfig */,
+				33C2E513F51198415EB13E9E /* Pods-SnakeTests.debug.xcconfig */,
+				2FD0C3AB0D9EAA0658796B63 /* Pods-SnakeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F28524431F6147F90053938A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F28524461F6148440053938A /* GameViewModelTests.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		F28524481F6148910053938A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2D4EE581F5E7F4100EEADE2 /* SnakeTests.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F28524491F614CAD0053938A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F285244A1F614CBE0053938A /* GameSceneTests.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		F2D4EE2B1F5E7F4000EEADE2 = {
 			isa = PBXGroup;
 			children = (
 				F2D4EE361F5E7F4100EEADE2 /* Snake */,
 				F2D4EE571F5E7F4100EEADE2 /* SnakeTests */,
 				F2D4EE351F5E7F4100EEADE2 /* Products */,
+				9C3092667F3BA8D6D91C0E3C /* Pods */,
+				52E55E5FE2BE8E433C70B381 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,7 +192,9 @@
 		F2D4EE571F5E7F4100EEADE2 /* SnakeTests */ = {
 			isa = PBXGroup;
 			children = (
-				F2D4EE581F5E7F4100EEADE2 /* SnakeTests.m */,
+				F28524491F614CAD0053938A /* View */,
+				F28524481F6148910053938A /* Model */,
+				F28524431F6147F90053938A /* ViewModel */,
 				F2D4EE5A1F5E7F4100EEADE2 /* Info.plist */,
 			);
 			path = SnakeTests;
@@ -190,9 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2D4EE5D1F5E7F4100EEADE2 /* Build configuration list for PBXNativeTarget "Snake" */;
 			buildPhases = (
+				01593274172BBD739EA1501A /* [CP] Check Pods Manifest.lock */,
 				F2D4EE301F5E7F4000EEADE2 /* Sources */,
 				F2D4EE311F5E7F4000EEADE2 /* Frameworks */,
 				F2D4EE321F5E7F4000EEADE2 /* Resources */,
+				BE8FF3FD3CB39B9A2D8EF0EE /* [CP] Embed Pods Frameworks */,
+				3CFC595978DC6FC5EA1A5D78 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,9 +272,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2D4EE601F5E7F4100EEADE2 /* Build configuration list for PBXNativeTarget "SnakeTests" */;
 			buildPhases = (
+				81FDEDACF1184C88DCA800DD /* [CP] Check Pods Manifest.lock */,
 				F2D4EE501F5E7F4100EEADE2 /* Sources */,
 				F2D4EE511F5E7F4100EEADE2 /* Frameworks */,
 				F2D4EE521F5E7F4100EEADE2 /* Resources */,
+				7E4F3AC824CD61B8E12AD12C /* [CP] Embed Pods Frameworks */,
+				E2E7BEE53696ABFD9A7581EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,6 +349,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01593274172BBD739EA1501A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3CFC595978DC6FC5EA1A5D78 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snake/Pods-Snake-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E4F3AC824CD61B8E12AD12C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnakeTests/Pods-SnakeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81FDEDACF1184C88DCA800DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE8FF3FD3CB39B9A2D8EF0EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snake/Pods-Snake-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2E7BEE53696ABFD9A7581EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnakeTests/Pods-SnakeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2D4EE301F5E7F4000EEADE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -303,6 +464,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28524471F6148440053938A /* GameViewModelTests.m in Sources */,
+				F285244B1F614CBE0053938A /* GameSceneTests.m in Sources */,
 				F2D4EE591F5E7F4100EEADE2 /* SnakeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +592,7 @@
 		};
 		F2D4EE5E1F5E7F4100EEADE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B45F0FDAF99A3531F74597DD /* Pods-Snake.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Snake/Info.plist;
@@ -440,6 +604,7 @@
 		};
 		F2D4EE5F1F5E7F4100EEADE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F899DEB1E4D1805C2B7BEEB7 /* Pods-Snake.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Snake/Info.plist;
@@ -451,6 +616,7 @@
 		};
 		F2D4EE611F5E7F4100EEADE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33C2E513F51198415EB13E9E /* Pods-SnakeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SnakeTests/Info.plist;
@@ -463,6 +629,7 @@
 		};
 		F2D4EE621F5E7F4100EEADE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD0C3AB0D9EAA0658796B63 /* Pods-SnakeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SnakeTests/Info.plist;
@@ -492,6 +659,7 @@
 				F2D4EE5F1F5E7F4100EEADE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2D4EE601F5E7F4100EEADE2 /* Build configuration list for PBXNativeTarget "SnakeTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +668,7 @@
 				F2D4EE621F5E7F4100EEADE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

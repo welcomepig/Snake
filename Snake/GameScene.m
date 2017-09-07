@@ -54,7 +54,7 @@ static NSString* SnakeMovingActionName = @"snakeMoving";
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    UITouch * touch = [touches anyObject];
+    UITouch *touch = [touches anyObject];
     
     if (_viewModel.status == GameStatusPlaying) {
         [self endPan:touch];
